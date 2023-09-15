@@ -1,0 +1,58 @@
+.hero-section {
+    background: #2E2F42;
+    max-width: 1440px;
+    padding-bottom: 188px;
+    padding-top: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: padding-box;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: url(../images/background/background-hero@2x.jpg);
+    }
+}
+
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto 48px;
+    color: #FFF;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    /* 107.143% */
+    letter-spacing: 0.02em;
+}
+
+.hero-button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 4px;
+    min-width: 169px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background: #4D5AE5;
+    color: #FFF;
+    /* Button Text */
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:focus,
+.hero-button:hover {
+    background: #404BBF;
+}
