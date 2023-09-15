@@ -1,24 +1,4 @@
-.hero-section {
-    background: #2E2F42;
-    max-width: 1440px;
-    padding-bottom: 188px;
-    padding-top: 260px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url();
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-origin: padding-box;
-}
 
-@media screen and (min-resolution: 192dpi) {
-    .hero-section {
-        background-image: url(../images/background/background-hero@2x.jpg);
-    }
-}
 
 .hero-title {
     max-width: 496px;
