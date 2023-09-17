@@ -8,14 +8,48 @@
     margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/background/background-hero.jpg);
+        url(../images/background/background-hero-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-origin: padding-box;
 }
 
-@media screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/background/background-hero-mobile@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/background/background-hero-tablet.jpg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/background/background-hero-tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/background/background-hero.jpg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px), 
+    screen and (min-resolution: 2dppx) and (min-width: 1158px), 
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),url(../images/background/background-hero@2x.jpg);
