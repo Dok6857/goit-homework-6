@@ -396,7 +396,15 @@
             <li class="portfolio-list-item">
               <div class="img-wrapper">
                 <img
-                  src="./images/our_portfolio/banking_app.jpg"
+                  srcset="
+                    ./images/our_portfolio/banking_app.jpg        360w,
+                    ./images/our_portfolio/banking_app_tablet.jpg 356w,
+                    ./images/our_portfolio/banking_app_mobile.jpg 288w
+                  "
+                  sizes="(min-width: 1158px) 360px, 
+                        (min-width: 768px) 356px, 
+                        (max-width: 767px) 288px"
+                  src="./images/our_portfolio/banking_app_mobile.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
