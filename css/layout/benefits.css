@@ -23,6 +23,7 @@
     .benefits-text {
         align-self: stretch;
         font-size: 16px;
+        font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
     }
@@ -61,6 +62,10 @@
         border-radius: 4px;
         border: 1px solid #8E8F99;
         background: #F4F4FD;
+    }
+
+    .benefits-text {
+        font-weight: 400;
     }
 
     .benefits-list {
